@@ -15,5 +15,10 @@ AKFProjectile::AKFProjectile()
 	MovementComp->MaxSpeed = 6000.0f;
 	MovementComp->bShouldBounce = true;
 	MovementComp->Bounciness = 0.3f;
-	
+
+	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("/Game/Example01/Meshes/SM_Sphere"));
+	if(MeshObj.Object)
+	{
+		SphereMesh->SetStaticMesh(MeshObj.Object);
+	}	
 }

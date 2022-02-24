@@ -33,6 +33,4 @@ protected:
 
 	UFUNCTION()
 	void HitMesh(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit );
-
-	//TODO: OnCompHit, make the mesh, make the sound and do the character
 };

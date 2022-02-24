@@ -13,7 +13,6 @@ AKFShootTarget::AKFShootTarget()
 	PrimaryActorTick.bCanEverTick = false;
 
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("StaticMesh"));
-	
 }
 
 void AKFShootTarget::BeginPlay()
